@@ -1,3 +1,4 @@
+console.log("Conectado el js")
 const propiedadesAlquiler = [
     {
         nombre: 'Apartamento en el centro de la ciudad',

@@ -10,8 +10,7 @@ const propiedadesVenta = [
         costo: 5.000,
         smoke: false,
         pets: false
-    };
-
+    },
     {
         nombre: 'Apartamento acogedor en la montaña',
         src: 'https://cdn.bioguia.com/embed/3d0fb0142790e6b90664042cbafcb1581427139/furgoneta.jpg',
@@ -22,7 +21,7 @@ const propiedadesVenta = [
         costo: 1.200,
         smoke: true,
         pets: true
-    };
+    },
 
     {
         nombre: ' Penthouse de lujo con terraza panorámica',
@@ -34,7 +33,7 @@ const propiedadesVenta = [
         costo: 4.500,
         smoke: false,
         pets: true
-    };
+    },
 
     {
         nombre: 'Chameleon Villa',
@@ -46,6 +45,6 @@ const propiedadesVenta = [
         costo: 6.500,
         smoke: false,
         pets: true
-    };
+    }
 ]
 export default propiedadesVenta;

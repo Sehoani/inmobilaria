@@ -1,10 +1,12 @@
+console.log("conectado el JS");
+
 import propiedadesVenta from "./propiedades_venta.js"
 import propiedadesAlquiler from "./propiedades_alquiler.js"
 
 const mostrarCasas = (casas, containerId) => {
     const container = document.getElementById(containerId)
     const casasLimitados = casas.slice(0, 3)
-    casasLimitados.forEach((casa) => {
+    casasLimitados.forEach((casas) => {
         const { nombre, src, descripcion, direccion, habitaciones, baños, costo, smoke, pets } = casas;
         const card = document.createElement("div")
         card.classList.add("col-md-4", "mb-4")
@@ -53,7 +55,5 @@ const init = () =>{
     mostrarCasas(propiedadesVenta,'venta');
 }
 window.addEventListener ('load', init);
-
-
 
 
