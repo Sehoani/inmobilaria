@@ -4,13 +4,13 @@ import propiedadesVenta from "./propiedades_venta.js"
 import propiedadesAlquiler from "./propiedades_alquiler.js"
 
 const mostrarCasas = (casas, containerId) => {
-    const container = document.getElementById(containerId)
-    const casasLimitados = casas.slice(0, 3)
-    casasLimitados.forEach((casas) => {
-        const { nombre, src, descripcion, direccion, habitaciones, baños, costo, smoke, pets } = casas;
-        const card = document.createElement("div")
-        card.classList.add("col-md-4", "mb-4", )
-        card.innerHTML = `
+  const container = document.getElementById(containerId)
+  const casasLimitados = casas.slice(0,3)
+  casasLimitados.forEach((casas) => {
+    const { nombre, src, descripcion, direccion, habitaciones, baños, costo, smoke, pets } = casas;
+    const card = document.createElement("div")
+    card.classList.add("col-md-4", "mb-4",)
+    card.innerHTML = `
             <div class="card">
                  <img src="${src}" class="card-img-top" alt="Imagen del departamento" />
             <div class="card-body">
@@ -40,15 +40,15 @@ const mostrarCasas = (casas, containerId) => {
     </div>
         
         `;
-        container.appendChild(card);
+    container.appendChild(card);
 
-    }
-    )
+  }
+  )
 };
-const init = () =>{
-    mostrarCasas(propiedadesVenta,'venta');
+const init = () => {
+  mostrarCasas(propiedadesVenta, 'venta');
 }
-window.addEventListener ('load', init);
+window.addEventListener('load', init);
 
 
 
@@ -58,12 +58,12 @@ window.addEventListener ('load', init);
 
 const mostrarCasas1 = (casas, containerId) => {
   const container1 = document.getElementById(containerId)
-  const casasLimitados1 = casas.slice(0, 3)
+  const casasLimitados1 = casas.slice(0,3)
   casasLimitados1.forEach((casas1) => {
-      const { nombre, src, descripcion, direccion, habitaciones, baños, costo, smoke, pets } = casas1;
-      const card1 = document.createElement("div")
-      card1.classList.add("col-md-4", "mb-4")
-      card1.innerHTML = `
+    const { nombre, src, descripcion, direccion, habitaciones, baños, costo, smoke, pets } = casas1;
+    const card1 = document.createElement("div")
+    card1.classList.add("col-md-4", "mb-4")
+    card1.innerHTML = `
           <div class="card">
                <img src="${src}" class="card-img-top" alt="Imagen del departamento" />
           <div class="card-body">
@@ -71,9 +71,6 @@ const mostrarCasas1 = (casas, containerId) => {
         <p class="card-text">
           ${descripcion}
         </p>
-
-
-
         <p>
           <i class="fas fa-map-marker-alt"></i> ${direccion}
         </p>
@@ -96,14 +93,14 @@ const mostrarCasas1 = (casas, containerId) => {
   </div>
       
       `;
-      container1.appendChild(card1);
+    container1.appendChild(card1);
 
   }
   )
 };
-const init1 = () =>{
-  mostrarCasas1(propiedadesAlquiler,'alquiler');
+const init1 = () => {
+  mostrarCasas1(propiedadesAlquiler, 'alquiler');
 }
-window.addEventListener ('load', init1);
+window.addEventListener('load', init1);
 
 
